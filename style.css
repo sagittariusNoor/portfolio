@@ -1,0 +1,251 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-image: url('p.jpg'); /* Adjust path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Adjust as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero section styles */
+#hero {
+    position: relative;
+    background-image: url('bb.jpg'); /* Adjust path to your full-screen photo */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 150px; /* Add padding to create the border effect */
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background for text */
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.side-image {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.side-image img {
+    width: 150px; /* Adjust size as needed */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+section {
+    padding: 40px 0;
+    margin-top: 160px; /* Adjust margin to create space below the fixed hero section */
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* About Me section styles */
+.about-container {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.bio {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.bio img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.bio-info p {
+    margin-bottom: 10px;
+}
+
+.bio-info p strong {
+    font-weight: bold;
+}
+
+.bio-info {
+    background-color: #fff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Projects section styles */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+/* Contact section styles */
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+form input[type="email"],
+form button {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #1c1c1c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #393839;
+}
+
+/* Footer styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Slim and Appealing Header */
+header {
+    background-color: rgba(0, 0, 0, 0.6); /* Dark background color */
+    color: #fff;
+    padding: 5px 0; /* Reduce padding to make the header thinner */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-size: 1.5rem; /* Adjusted font size */
+    margin-left: 20px; /* Adjust margin */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    flex: 1; /* Allows the navigation to take up remaining space */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem; /* Adjusted font size for navigation links */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .bio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .bio img {
+        margin: 0 auto 20px;
+    }
+
+    .side-image img {
+        width: 120px; /* Adjusted size for smaller screens */
+    }
+
+    header {
+        padding: 10px; /* Adjusted padding for smaller screens */
+    }
+
+    header h1 {
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+}
